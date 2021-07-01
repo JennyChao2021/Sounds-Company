@@ -1,0 +1,159 @@
+@import url('reset.css');
+
+body{
+	font-family: arial;
+	line-height: 1.6;
+	background-color: white;
+	background-image: url(pic/nasa.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* ----------- Top ----------- */
+
+.top{
+	/*background-color: #666;*/
+	height: 80px;
+	display: flex;
+	align-items: center;
+
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	}
+
+.top-main{
+	display: flex;
+	height: 80px;
+	width: 100%;
+	/*margin: 0 auto;*/
+	/*border-bottom: 1px solid grey;*/
+	/*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+.top-main img{
+	width: 80px;
+	margin-left: 100px;
+	/*margin-bottom: 20px;*/
+}
+
+.botton{
+	display: flex;
+	margin-left: auto;
+	margin-right: 100px;
+}
+
+.botton ul{
+	display: flex;
+
+	width: 585px;
+}
+
+.botton li{
+	margin-right: 20px;
+	padding-top: 30px;
+	width: 100px;
+}
+
+.botton a{
+	text-decoration: none;
+	color:white;
+
+	font-size: 18px;
+	display: block;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.botton li:hover{
+	background-color: rgba(210, 210, 210, 0.3);
+	border-bottom: 3px solid white;
+}
+
+/*------------------------- company info -----------------------------*/
+
+.company{
+	display: flex;
+	margin: 80px 10%;
+	align-items: center;
+
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	padding-bottom: 80px;
+}
+
+.company img{
+	width: 400px;
+	margin-right: 50px;
+	border: 5px solid white;
+	border-radius: 5%;
+}
+
+.company p{
+	color: white;
+	font-size: 16px;
+}
+
+/*------------------------- founder info -----------------------------*/
+
+.boss{
+	display: flex;
+	margin: 0 10% 50px 10%;
+	align-items: center;
+
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	padding-bottom: 80px;
+}
+
+.boss img{
+	width: 400px;
+	margin-left: 50px;
+	border: 5px solid white;
+	border-radius: 50%;
+
+	order: 2;
+}
+
+.boss p{
+	color: white;
+	font-size: 16px;
+
+	order: 1;
+}
+
+/*------------------------- end -----------------------------*/
+
+.info{
+	color: white;
+	font-size: 16px;
+	text-align: center;
+
+	margin-top: 50px;
+	/*border-top:1px solid rgba(210, 210, 210);*/
+}
+
+.info h3{
+	margin-top: 30px;
+}
+
+.copy{
+	margin-top:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,322 @@
+@import url('reset.css');
+
+body{
+	font-family: arial;
+	line-height: 1.6;
+	background-color: white;
+}
+
+/* ----------- Top ----------- */
+
+.top{
+	height: 80px;
+	display: flex;
+	align-items: center;
+	}
+
+.top-main{
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	width:100%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.top-main img{
+	width: 80px;
+	margin-left: 100px;
+}
+
+.botton{
+	display: flex;
+	margin-left: auto;
+	margin-right: 100px;
+}
+
+.botton ul{
+	display: flex;
+
+	width: 585px;
+}
+
+.botton li{
+	margin-right: 20px;
+	padding-top: 30px;
+	width: 100px;
+}
+
+.botton a{
+	text-decoration: none;
+	color:white;
+
+	font-size: 18px;
+	display: block;
+	text-align: center;
+	line-height: 1.6;
+}
+
+.botton li:hover{
+	background-color: rgba(210, 210, 210, 0.3);
+	border-bottom: 3px solid white;
+}
+
+.fas{
+	color: white;
+	font-size: 30px;
+
+	display: none;
+}
+
+/* ----------- Key Visual ----------- */
+.kv{
+	background-image: url(pic/banner2.png);
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	min-width: 320px;
+
+}
+
+.kv::after{
+            content: "";
+            display: block;
+            padding-bottom: 36.111%;
+        }
+
+.kv-main{
+	text-align: center;
+}
+
+
+/*------------------------------- Middle ----------------------------------*/
+
+.middle{
+	color: rgba(210, 210, 210);
+	text-align: center;
+	border-bottom: 1px solid rgba(210, 210, 210);
+	margin:10px 20% 30px 20%;
+}
+
+.middle h3{
+	font-size: 36px;
+}
+
+.middle p{
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+/*------------------------------- Main Course ----------------------------------*/
+
+.content{
+
+}
+
+.content-main{
+	position: relative;
+}
+
+.content-list{
+	display: flex;
+	justify-content: flex-start;
+	/*flex-shrink: 0;*/
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 50px;
+}
+
+.content-list a{
+	text-decoration: none;
+}
+
+.content-list img{
+	margin-right: 20px;
+	filter: grayscale(1);
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.content-list h4{
+	width: 200px;
+	height: 200px;
+
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	transform: translate(0, -60%);
+	z-index: 2;
+	pointer-events: none
+}
+
+.content-list img:hover{
+	filter: grayscale(0);
+	opacity: 1;
+}
+
+/*---------------------- company info -----------------------*/
+
+.info{
+	color: #666;
+	font-size: 16px;
+	text-align: center;
+
+	margin-top: 50px;
+	border-top:1px solid rgba(210, 210, 210);
+}
+
+.info h3{
+	margin-top: 30px;
+}
+
+.copy{
+	margin-top:30px;
+}
+
+
+/*----------------------- RWD 1024px --------------------------------*/
+
+@media screen and (max-width: 1024px){
+
+	.top{
+		justify-content: space-between;
+		height: 50px;
+	}
+
+	.fas{
+		float: right;
+
+		display: block;
+		width: 50px;
+    	margin-right: 50px;
+	}
+
+	.botton{
+    	max-height: 0px;
+    	overflow: hidden;
+    	transition: max-height 2s;
+    	position: absolute;
+    	/*z-index: 100;*/
+    	top: 80px;
+
+    	left: 0;
+    	right: 0;
+    	text-align: center;
+  	}
+  	.botton{
+  		margin: 0;
+  		flex-direction: column;
+  		margin-right: 0;
+		top: 50px;
+  	}
+
+  	.botton li{
+  		/*margin: 0;*/
+  		width: 100%;
+  		background-color: rgba(17, 17, 17, 0.5);
+  		padding: 10px 0;
+  	}
+
+  	.botton li a{
+    	transition: all 0.3s;
+    	color: white;
+  	}
+  	.botton li:hover{
+		background-color: rgba(17, 17, 17, 0.8);
+	}
+   
+  	.showMenu{
+    	display: block;
+    	/*float: right;*/
+    	margin: 1em;
+    	font-size:20px;
+  	} 
+  		/*jQ點擊後動態在 body 加上 class ，藉著修改 max-height，畫面就顯示了*/
+  	.menu-show{
+    	max-height: 500px;
+  	}
+
+  /*---*/
+
+	.top-main{
+		/*flex-direction: column;*/
+		height: 50px;
+		background-color: rgba(17, 17, 17, 0.5);
+
+		align-items: center;
+		justify-content: space-between;
+		}
+
+	.top-main img{
+		width: 50px;
+		margin-left: 50px;
+	}
+
+}
+
+/*----------------------- RWD 800px --------------------------------*/
+/*----------------------- RWD 600px --------------------------------*/
+/*----------------------- RWD 428px --------------------------------*/
+
+@media screen and (max-width: 428px){
+
+	.top{
+		height: 50px;
+	}
+
+	.top-main{
+		/*flex-direction: column;*/
+		height: 50px;
+		background-color: rgba(17, 17, 17, 0.5);
+
+		align-items: center;
+		justify-content: space-between;
+		}
+
+	.top-main img{
+		width: 50px;
+		margin-left: 20px;
+	}
+
+	.botton{
+		margin-right: 0;
+		top: 50px;
+	}
+
+	.botton li{
+  		background-color: rgba(17, 17, 17, 0.5);
+  		padding: 10px 0;
+  	}
+
+	.fas{
+		width: 50px;
+    	margin-right: 20px;
+    }
+
+    .middle{
+	color: #666;
+	border-bottom: 1px solid #666;
+	}
+
+    .content-list{
+	justify-content: center;
+	align-items: center;
+	}
+
+    .content-list img{
+	filter: grayscale(0);
+	opacity: 1;
+	margin: 0;
+	}
+
+	.showMenu{
+    margin: 0;
+}
+/*----------------------- RWD 390px --------------------------------*/
+
+
+
+
+
